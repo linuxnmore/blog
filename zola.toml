@@ -1,0 +1,50 @@
+base_url = "https://linuxnmore.blog"
+title = "Linux n' More"
+description = "Linux tutorials, installation guides, and all your FOSS needs."
+author = "C.T. Peck"
+default_language = "en"
+
+theme = "kita"
+compile_sass = true
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [{ name = "tags", rss = true, paginate_by = 5 }]
+
+[extra]
+math = false
+mermaid = false
+comment = false
+side_toc = true
+social_image = "images/profile.jpg"
+
+[extra.profile]
+name = "Linux n' More"
+bio = "This blog is run by C.T. Peck, a Linux and FOSS enthusiast from Texas with a penchant for tech of all kinds. Here you will find tutorials, commentary, and lists on various tech topics."
+avatar_url = "images/headshot_final.png"
+avatar_invert = false
+
+[[extra.profile.social]]
+name = "codeberg"
+url = "https://codeberg.org/linuxnmore"
+
+[[extra.profile.social]]
+name = "rss"
+url = "$BASE_URL/atom.xml"
+
+[[extra.menu]]
+name = "Tags"
+url = "$BASE_URL/tags"
+
+[[extra.menu]]
+name = "About"
+url = "$BASE_URL/about"
+
+[markdown.highlighting]
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[extra.footer]
+since = 2026
+license = "CC BY-SA 4.0"
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/"

@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block main %}
+<h1>{{ section.title }}</h1>
+
+<div class="about-avatar-wrap">
+  <img src="images/headshot_final.png" alt="Photo of Carter" class="about-avatar">
+</div>
+
+{% if section.description %}
+<p class="post-description">{{ section.description }}</p>
+{% endif %}
+
+{{ section.content | safe }}
+{% endblock main %}

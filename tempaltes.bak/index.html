@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ section.title }}</title>
+</head>
+<body>
+  <header>
+    <h1>{{ section.title }}</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ section.content | safe }}
+
+    <h2>Recent posts</h2>
+    <p>
+      <a href="/blog/debian-install-guide/">Installing Debian with the Graphical Installer</a>
+    </p>
+  </main>
+</body>
+</html>

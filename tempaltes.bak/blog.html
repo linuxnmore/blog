@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ section.title }}</title>
+</head>
+<body>
+  <main>
+    <h1>{{ section.title }}</h1>
+
+    <ul>
+      {% for page in section.pages %}
+        <li>
+          <a href="{{ page.permalink }}">{{ page.title }}</a>
+          {% if page.date %} - {{ page.date }}{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>
